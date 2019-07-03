@@ -24,8 +24,10 @@ BEGIN
 	PULLDOWN "Options"
 	BEGIN
 		MENUITEM "Security..." ID OptionsSecurity "H"
-		MENUITEM "About PalmOS Authenticator" ID OptionsAboutPalmOSAuthenticator
-	END
+			MENUITEM "New Item" ID OptionsNewItem  "N"
+MENUITEM "About PalmOS Authenticator" ID OptionsAboutPalmOSAuthenticator
+		
+END
 
 END	
 
@@ -105,4 +107,23 @@ BEGIN
     BITMAP "icon-sm-1-d144.bmp" BPP 1 DENSITY 2
     BITMAP "icon-sm-2-d144.bmp" BPP 2 DENSITY 2
     BITMAP "icon-sm-8-d144.bmp" BPP 8 TRANSPARENTINDEX 210 COMPRESS DENSITY 2 
+END
+
+
+
+
+
+
+
+
+
+
+
+
+ALERT ID AlertNotImplemented 
+CONFIRMATION
+BEGIN
+     TITLE "Wak!"
+     MESSAGE "Not implemented"
+     BUTTONS "OK" 
 END

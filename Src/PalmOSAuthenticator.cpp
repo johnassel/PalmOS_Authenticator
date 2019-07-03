@@ -15,6 +15,9 @@
 
 #include "PalmOSAuthenticator.h"
 #include "PalmOSAuthenticator_Rsc.h"
+#include <cstring>
+#include <string>
+using namespace std;
 
 /*********************************************************************
  * Entry Points
@@ -52,23 +55,34 @@
 static void MainFormInit(FormType *frmP)
 {
 	FieldType *field;
-	const char *wizardDescription;
+	//const char *wizardDescription;
 	UInt16 fieldIndex;
+	
+	string test = "test";
+	string test2 = "test2";
+	
+	int len;
+	
+	string test3 = test + " " + test2;
+	len=test3.size();
 
 	fieldIndex = FrmGetObjectIndex(frmP, MainDescriptionField);
 	field = (FieldType *)FrmGetObjectPtr(frmP, fieldIndex);
 	FrmSetFocus(frmP, fieldIndex);
 
-	wizardDescription =
+	/*wizardDescription =
 		"C++ application\n"
 		"Creator Code: POAU\n"
 		"\n"
 		"Other SDKs:\n"
 		;
+     */
+	
 				
 	/* dont stack FldInsert calls, since each one generates a
 	 * fldChangedEvent, and multiple uses can overflow the event queue */
-	FldInsert(field, wizardDescription, StrLen(wizardDescription));
+	//FldInsert(field, wizardDescription, StrLen(wizardDescription));
+	FldInsert(field, test3.c_str(), len);
 }
 
 /*
@@ -106,6 +120,14 @@ static Boolean MainFormDoCommand(UInt16 command)
 		case OptionsSecurity:
 		{
 			SecSelectViewStatus();
+			// TODO: tell your app to redraw the form based on the new prefShowPrivateRecords setting
+			handled = true;
+			break;
+		}
+		
+		case OptionsNewItem:
+		{
+			FrmAlert(AlertNotImplemented);
 			// TODO: tell your app to redraw the form based on the new prefShowPrivateRecords setting
 			handled = true;
 			break;

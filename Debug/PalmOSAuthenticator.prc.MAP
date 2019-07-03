@@ -31,42 +31,157 @@ File:   30	"\\engserv\cdserver\Product_Layouts\PalmOS\Version 9.0\Win Layout\CW 
 File:   31	"C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Rsc\PalmOSAuthenticator_Rsc.rcp"
 File:   32	"C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Src\PalmOSAuthenticator.cpp"
 
-Segment:   1    2082 bytes  "Segment 1"
+Segment:   1    9408 bytes  "Segment 1"
 Code: 000004      12 bytes  "__DummyStartup__"               File: "__RuntimeModule__"
-Code: 000010      12 bytes  "__dthandler__4MTWKFv"           File: "NMWException.cp"
-Code: 00001c      12 bytes  "__duhandler__4MTWKFv"
-Code: 000028      16 bytes  "terminate__3stdFv"
-Code: 000038      24 bytes  "abort"                          File: "PalmOS_AbortExit.cpp"
-Code: 000050      42 bytes  "__destroy_global_chain"         File: "PalmOS_GlobalDestructors.c"
-Code: 00007a      14 bytes  "setjmp"                         File: "PalmOS_setjmp.c"
-Code: 000088      18 bytes  "longjmp"
-Code: 00009a     160 bytes  "__Relocate____4MTWKFPScPScUl"   File: "PalmOS_Startup.cpp"
-Code: 00013a     314 bytes  "__Startup__"
-Code: 000274       8 bytes  "__PreInit__"
-Code: 00027c       8 bytes  "__InitCode__"
-Code: 000284     132 bytes  "__SkipToXREFs____4MTWKFPSc"
-Code: 000308     128 bytes  "__PatchV10Devices____4MTWKFP14SysAppInfoType"
-Code: 000388     234 bytes  "__LoadAndRelocate____4MTWKFUcP7_opaque"
-Code: 000472     126 bytes  "MainFormInit__FP8FormType"      File: "C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Src\PalmOSAuthenticator.cpp"
-Code: 0004f0      78 bytes  "MainFormDoCommand__FUs"
-Code: 00053e     130 bytes  "MainFormHandleEvent__FP9EventType"
-Code: 0005c0      74 bytes  "AppHandleEvent__FP9EventType"
-Code: 00060a      90 bytes  "AppEventLoop__Fv"
-Code: 000664      10 bytes  "AppStart__Fv"
-Code: 00066e      12 bytes  "AppStop__Fv"
-Code: 00067a     304 bytes  "RomVersionCompatible__FUlUs"
-Code: 0007aa      80 bytes  "PilotMain"
-Code: 0007fa      40 bytes  "GetObjectPtr<9FieldType>__FUs_P9FieldType"
+Code: 000010     416 bytes  "Ex68K_FindExceptionRecord__FPcP15MWExceptionInfo" File: "Exception68K.cp"
+Code: 0001b0     272 bytes  "Ex68K_NextAction__FP14ActionIterator"
+Code: 0002c0      64 bytes  "Ex68K_MoveToFPx__FPcs"
+Code: 000300     196 bytes  "Ex68K_PopStackFrame__FP12ThrowContextP15MWExceptionInfo"
+Code: 0003c4     146 bytes  "Ex68K_GetValue__FP12ThrowContextls"
+Code: 000456    1018 bytes  "Ex68K_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv"
+Code: 000850     262 bytes  "__unexpected"
+Code: 000956      42 bytes  "__dt__Q23std9exceptionFv"
+Code: 000980      52 bytes  "__dt__Q23std13bad_exceptionFv"
+Code: 0009b4      22 bytes  "Ex68K_LongJump__FP12ThrowContextPv"
+Code: 0009ca     650 bytes  "Ex68K_ThrowHandler__FP12ThrowContext"
+Code: 000c54      54 bytes  "__throw"
+Code: 000c8a      48 bytes  "__rethrow"
+Code: 000cba      30 bytes  "Ex68K_CatchInfoDtor"
+Code: 000cd8      42 bytes  "__end__catch"
+Code: 000d02      12 bytes  "what__Q23std13bad_exceptionCFv"
+Code: 000d0e      12 bytes  "what__Q23std9exceptionCFv"
+Code: 000d1a      12 bytes  "__dthandler__4MTWKFv"           File: "NMWException.cp"
+Code: 000d26      12 bytes  "__duhandler__4MTWKFv"
+Code: 000d32      16 bytes  "terminate__3stdFv"
+Code: 000d42      18 bytes  "unexpected__3stdFv"
+Code: 000d54     308 bytes  "__throw_catch_compare"
+Code: 000e88      90 bytes  "__throw_bad_alloc__3stdFv"      File: "NewMore.cp"
+Code: 000ee2      52 bytes  "__dt__Q23std9bad_allocFv"
+Code: 000f16      12 bytes  "what__Q23std9bad_allocCFv"
+Code: 000f22      66 bytes  "__nw__FUl"                      File: "New.cp"
+Code: 000f64      38 bytes  "__dl__FPv"
+Code: 000f8a      24 bytes  "abort"                          File: "PalmOS_AbortExit.cpp"
+Code: 000fa2      42 bytes  "__destroy_global_chain"         File: "PalmOS_GlobalDestructors.c"
+Code: 000fcc      14 bytes  "setjmp"                         File: "PalmOS_setjmp.c"
+Code: 000fda      18 bytes  "longjmp"
+Code: 000fec     160 bytes  "__Relocate____4MTWKFPScPScUl"   File: "PalmOS_Startup.cpp"
+Code: 00108c     314 bytes  "__Startup__"
+Code: 0011c6       8 bytes  "__PreInit__"
+Code: 0011ce       8 bytes  "__InitCode__"
+Code: 0011d6     132 bytes  "__SkipToXREFs____4MTWKFPSc"
+Code: 00125a     128 bytes  "__PatchV10Devices____4MTWKFP14SysAppInfoType"
+Code: 0012da     234 bytes  "__LoadAndRelocate____4MTWKFUcP7_opaque"
+Code: 0013c4      32 bytes  "__lmul__"                       File: "CWRuntime.c"
+Code: 0013e4     208 bytes  "MainFormInit__FP8FormType"      File: "C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Src\PalmOSAuthenticator.cpp"
+Code: 0014b4      16 bytes  "c_str__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 0014c4      16 bytes  "data__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 0014d4      56 bytes  "get_pointer__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 00150c      20 bytes  "long_pointer__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 001520      12 bytes  "first__Q310Metrowerks7details117compressed_pair_imp<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>,2>CFv"
+Code: 00152c      20 bytes  "short_pointer__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 001540      24 bytes  "is_long__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 001558      62 bytes  "size__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 001596      20 bytes  "long_size__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 0015aa      20 bytes  "short_size__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 0015be      96 bytes  "MainFormDoCommand__FUs"
+Code: 00161e     130 bytes  "MainFormHandleEvent__FP9EventType"
+Code: 0016a0      74 bytes  "AppHandleEvent__FP9EventType"
+Code: 0016ea      90 bytes  "AppEventLoop__Fv"
+Code: 001744      10 bytes  "AppStart__Fv"
+Code: 00174e      12 bytes  "AppStop__Fv"
+Code: 00175a     304 bytes  "RomVersionCompatible__FUlUs"
+Code: 00188a      80 bytes  "PilotMain"
+Code: 0018da      40 bytes  "GetObjectPtr<9FieldType>__FUs_P9FieldType"
+Code: 001902     134 bytes  "__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>RCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12all…"
+Code: 001988      44 bytes  "replace__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUlUlPCcUl"
+Code: 0019b4      82 bytes  "pointer_size__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFRPCcRUl"
+Code: 001a06      32 bytes  "__ct__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 001a26      50 bytes  "zero__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 001a58      16 bytes  "words__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 001a68      12 bytes  "first__Q310Metrowerks7details117compressed_pair_imp<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>,2>Fv"
+Code: 001a74      20 bytes  "__ct__Q210Metrowerks111compressed_pair<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>>Fv"
+Code: 001a88      20 bytes  "__ct__Q310Metrowerks7details117compressed_pair_imp<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>,2>Fv"
+Code: 001a9c      12 bytes  "__ct__Q23std12allocator<c>Fv"
+Code: 001aa8     132 bytes  "__pl<c,Q23std14char_traits<c>,Q23std12allocator<c>>__3stdFRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>PCc_Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
+Code: 001b2c      16 bytes  "length__Q23std14char_traits<c>FPCc"
+Code: 001b3c      20 bytes  "strlen__3stdFPCc"
+Code: 001b50     104 bytes  "__dt__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 001bb8      16 bytes  "deallocate__Q23std12allocator<c>FPcUl"
+Code: 001bc8      24 bytes  "long_cap__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 001be0      20 bytes  "long_pointer__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 001bf4      16 bytes  "alloc__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 001c04      12 bytes  "second__Q310Metrowerks7details117compressed_pair_imp<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>,2>Fv"
+Code: 001c10      12 bytes  "__ct__Q210Metrowerks17compile_assert<1>Fv"
+Code: 001c1c      78 bytes  "__ct__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FPCc"
+Code: 001c6a     746 bytes  "do_replace__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUlUlPCcPCcQ23std26random_access_iterator_tag"
+Code: 001f54      30 bytes  "short_size__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUi"
+Code: 001f72      24 bytes  "move__Q23std14char_traits<c>FPcPCcUl"
+Code: 001f8a      28 bytes  "memmove__3stdFPvPCvUl"
+Code: 001fa6      38 bytes  "__ct__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FRCQ23std12allocator<c>"
+Code: 001fcc      24 bytes  "__ct__Q210Metrowerks111compressed_pair<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>>FRCQ23std12allocator<c>"
+Code: 001fe4      24 bytes  "__ct__Q310Metrowerks7details117compressed_pair_imp<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>,2>FRCQ23std12allocator<c>"
+Code: 001ffc      12 bytes  "__ct__Q23std12allocator<c>FRCQ23std12allocator<c>"
+Code: 002008      34 bytes  "long_cap__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUl"
+Code: 00202a      44 bytes  "is_long__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fb"
+Code: 002056      18 bytes  "assign__Q23std14char_traits<c>FRcRCc"
+Code: 002068      24 bytes  "copy<c>__3stdFPCcPCcPc_Pc"
+Code: 002080      48 bytes  "copy__Q23std17__msl_copy<c,1,1>FPcPcPc"
+Code: 0020b0      28 bytes  "memcpy__3stdFPvPCvUl"
+Code: 0020cc      24 bytes  "copy__Q23std14char_traits<c>FPcPCcUl"
+Code: 0020e4      40 bytes  "allocate__Q23std12allocator<c>FUlPCv"
+Code: 00210c      20 bytes  "recommend__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUl"
+Code: 002120      30 bytes  "align__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUlUl"
+Code: 00213e      28 bytes  "max_size__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 00215a      12 bytes  "max_size__Q23std12allocator<c>CFv"
+Code: 002166      10 bytes  "max__Q23std18numeric_limits<Ul>Fv"
+Code: 002170      16 bytes  "alloc__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>CFv"
+Code: 002180      12 bytes  "second__Q310Metrowerks7details117compressed_pair_imp<Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5rep_s,Q23std12allocator<c>,2>CFv"
+Code: 00218c      24 bytes  "distance<PCc>__3stdFPCcPCc_l"
+Code: 0021a4      18 bytes  "__distance<PCc>__3stdFPCcPCcQ23std26random_access_iterator_tag_l"
+Code: 0021b6      32 bytes  "min<Ul>__3stdFRCUlRCUl_RCUl"
+Code: 0021d6      28 bytes  "__msl_error__3stdFPCc"
+Code: 0021f2      20 bytes  "long_size__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 002206      20 bytes  "short_pointer__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+Code: 00221a     388 bytes  "reserve__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUl"
+Code: 00239e      24 bytes  "copy<c>__3stdFPcPcPc_Pc"
+Code: 0023b6     162 bytes  "__ct__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FRCQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
+Code: 002458      26 bytes  "__as__Q33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5raw_tFRCQ33std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>5raw_t"
+Code: 002472      42 bytes  "assign<PCc>__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FPCcPCcPi_RQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
+Code: 00249c      36 bytes  "replace<PCc>__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUlUlPCcPCcPi_RQ23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>"
 
-Data section below A5:      8 bytes
-Data section above A5:    168 bytes
+Data section below A5:    236 bytes
+Data section above A5:    422 bytes
+
+Initialized near data
+Data:    -10      10 bytes  "@STRING@what__Q23std9bad_allocCFv"
+Data:    -26      16 bytes  "__vt__Q23std9bad_alloc"
+Data:    -34       8 bytes  "__RTTI__Q23std9bad_alloc"
+Data:    -46      12 bytes  "@293"
+Data:    -62      15 bytes  "@292"
+Data:    -72      10 bytes  "@STRING@what__Q23std9exceptionCFv"
+Data:    -86      14 bytes  "@STRING@what__Q23std13bad_exceptionCFv"
+Data:   -102      16 bytes  "__vt__Q23std9exception"
+Data:   -118      16 bytes  "__vt__Q23std13bad_exception"
+Data:   -126       8 bytes  "__RTTI__Q23std13bad_exception"
+Data:   -138      12 bytes  "@1139"
+Data:   -146       8 bytes  "__RTTI__Q23std9exception"
+Data:   -162      15 bytes  "@1140"
+Data:   -182      19 bytes  "@1138"
+Data:   -200      18 bytes  "@STRING@__msl_error__3stdFPCc"
+Data:   -226      26 bytes  "@STRING@allocate__Q23std12allocator<c>FUlPCv"
+Data:   -227       1 bytes  "@1744"
+Data:   -228       1 bytes  "@1730"
 
 Uninitialized near data
-Data:     -4       4 bytes  "__CW_FEATURES_PTR"
-Data:     -8       4 bytes  "__global_destructor_chain"
+Data:   -232       4 bytes  "__CW_FEATURES_PTR"
+Data:   -236       4 bytes  "__global_destructor_chain"
 
 Initialized far data
-Data:     40     128 bytes  "__segtable__"
+Data:    126     296 bytes  "__segtable__"
+Data:     40      28 bytes  "@exceptioninfo@"
+Data:     68      14 bytes  "@exceptioninfo@"
+Data:     82      34 bytes  "@exceptioninfo@"
+Data:    116      10 bytes  "@exceptioninfo@"
 
 -----
 
@@ -74,9 +189,9 @@ PRC DB Name:       PalmOSAuthenticator
 PRC DB Version:    1
 Type:              appl
 Creator:           POAU
-Resource Count:    12
-Creation Time:     2019-07-02 @ 1544
-Modification Time: 2019-07-02 @ 1544
+Resource Count:    13
+Creation Time:     2019-07-03 @ 1154
+Modification Time: 2019-07-03 @ 1154
 Last Backup Time:  
 Attributes:         0x00000009
                     dmHdrAttrResDB
@@ -86,13 +201,14 @@ Attributes:         0x00000009
 [PalmOS Authenticator]
 2:   tver           Application Version String         1000 (0x03e8)     4
 [1.0]
-3:   code           68K Object Code                    1 (0x0001)        2082
-4:   data           68K Global Data                    0 (0x0000)        107
+3:   code           68K Object Code                    1 (0x0001)        9408
+4:   data           68K Global Data                    0 (0x0000)        508
 5:   code           68K Object Code                    0 (0x0000)        24
-6:   MBAR           Menu Bar                           1001 (0x03e9)     286
-7:   MBAR           Menu Bar                           1005 (0x03ed)     191
-8:   Talt           Alert                              1007 (0x03ef)     98
-9:   tFRM           Form                               1008 (0x03f0)     202
-10:   tFRM           Form                               1011 (0x03f3)     334
+6:   MBAR           Menu Bar                           1001 (0x03e9)     303
+7:   MBAR           Menu Bar                           1006 (0x03ee)     191
+8:   Talt           Alert                              1008 (0x03f0)     98
+9:   tFRM           Form                               1009 (0x03f1)     202
+10:   tFRM           Form                               1012 (0x03f4)     334
 11:   tAIB           Application Icon                   1000 (0x03e8)     2360
 12:   tAIB           Application Icon                   1001 (0x03e9)     692
+13:   Talt           Alert                              1017 (0x03f9)     32
