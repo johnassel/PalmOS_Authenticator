@@ -121,9 +121,9 @@ END
 
 
 ALERT ID AlertNotImplemented 
-CONFIRMATION
+INFORMATION
 BEGIN
      TITLE "Wak!"
-     MESSAGE "Not implemented"
+     MESSAGE "^1"
      BUTTONS "OK" 
 END

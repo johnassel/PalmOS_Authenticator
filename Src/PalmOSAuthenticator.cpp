@@ -9,7 +9,7 @@
  * Copyright (c) 1999-2000 Palm, Inc. or its subsidiaries.
  * All rights reserved.
  */
- 
+#include <libs/SHALib.h> 
 #include <PalmOS.h>
 #include <PalmOSGlue.h>
 
@@ -54,9 +54,25 @@ using namespace std;
 
 static void MainFormInit(FormType *frmP)
 {
-	FieldType *field;
-	//const char *wizardDescription;
+	FieldType *field;;
 	UInt16 fieldIndex;
+	
+	/*
+	UInt16 SHALibRefNum;
+	
+	unsigned char input;
+	
+	
+	Err err = SysLibFind("SHALib", &SHALibRefNum);
+	if (err) err = SysLibLoad('libr', 'WSHA', &SHALibRefNum);
+	ErrFatalDisplayIf(err, "Cannot load SHA Library");
+	err = SHALibOpen(SHALibRefNum);
+
+	SHA1_CTX sha;
+	
+	SHALibSHA1Init(SHALibRefNum, &sha);
+	SHALibSHA1Update(SHALibRefNum, &sha,*input, StrLen(input))  
+	SHALibSHA1Final(SHALibRefNum, unsigned char digest[16], &sha)
 	
 	string test = "test";
 	string test2 = "test2";
@@ -65,25 +81,18 @@ static void MainFormInit(FormType *frmP)
 	
 	string test3 = test + " " + test2;
 	len=test3.size();
+	*/
 
 	fieldIndex = FrmGetObjectIndex(frmP, MainDescriptionField);
 	field = (FieldType *)FrmGetObjectPtr(frmP, fieldIndex);
-	FrmSetFocus(frmP, fieldIndex);
-
-	/*wizardDescription =
-		"C++ application\n"
-		"Creator Code: POAU\n"
-		"\n"
-		"Other SDKs:\n"
-		;
-     */
-	
+	FrmSetFocus(frmP, fieldIndex);	
 				
 	/* dont stack FldInsert calls, since each one generates a
 	 * fldChangedEvent, and multiple uses can overflow the event queue */
 	//FldInsert(field, wizardDescription, StrLen(wizardDescription));
-	FldInsert(field, test3.c_str(), len);
+	//FldInsert(field, test3.c_str(), len);
 }
+
 
 /*
  * FUNCTION: MainFormDoCommand
@@ -127,7 +136,7 @@ static Boolean MainFormDoCommand(UInt16 command)
 		
 		case OptionsNewItem:
 		{
-			FrmAlert(AlertNotImplemented);
+			FrmCustomAlert(AlertNotImplemented, "Nope", NULL, NULL);
 			// TODO: tell your app to redraw the form based on the new prefShowPrivateRecords setting
 			handled = true;
 			break;
@@ -190,6 +199,8 @@ static Boolean MainFormHandleEvent(EventType * eventP)
 				FieldType * field = GetObjectPtr<FieldType>(MainDescriptionField);
 				if (field)
 				{
+					char *text = FldGetTextPtr(field);
+					FrmCustomAlert(AlertNotImplemented, text, NULL, NULL);
 					FldDelete(field, 0, 0xFFFF);					
 					FldDrawField(field);
 				}
@@ -384,6 +395,7 @@ static Err RomVersionCompatible(UInt32 requiredVersion, UInt16 launchFlags)
 UInt32 PilotMain(UInt16 cmd, MemPtr cmdPBP, UInt16 launchFlags)
 {
 	Err error;
+	
 
 	error = RomVersionCompatible (ourMinVersion, launchFlags);
 	if (error) return (error);
