@@ -31,7 +31,7 @@ File:   30	"\\engserv\cdserver\Product_Layouts\PalmOS\Version 9.0\Win Layout\CW 
 File:   31	"C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Rsc\PalmOSAuthenticator_Rsc.rcp"
 File:   32	"C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Src\PalmOSAuthenticator.cpp"
 
-Segment:   1    2076 bytes  "Segment 1"
+Segment:   1    2104 bytes  "Segment 1"
 Code: 000004      12 bytes  "__DummyStartup__"               File: "__RuntimeModule__"
 Code: 000010      12 bytes  "__dthandler__4MTWKFv"           File: "NMWException.cp"
 Code: 00001c      12 bytes  "__duhandler__4MTWKFv"
@@ -47,16 +47,17 @@ Code: 00027c       8 bytes  "__InitCode__"
 Code: 000284     132 bytes  "__SkipToXREFs____4MTWKFPSc"
 Code: 000308     128 bytes  "__PatchV10Devices____4MTWKFP14SysAppInfoType"
 Code: 000388     234 bytes  "__LoadAndRelocate____4MTWKFUcP7_opaque"
-Code: 000472      54 bytes  "MainFormInit__FP8FormType"      File: "C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Src\PalmOSAuthenticator.cpp"
-Code: 0004a8     118 bytes  "MainFormDoCommand__FUs"
-Code: 00051e     156 bytes  "MainFormHandleEvent__FP9EventType"
-Code: 0005ba      74 bytes  "AppHandleEvent__FP9EventType"
-Code: 000604      90 bytes  "AppEventLoop__Fv"
-Code: 00065e      10 bytes  "AppStart__Fv"
-Code: 000668      12 bytes  "AppStop__Fv"
-Code: 000674     304 bytes  "RomVersionCompatible__FUlUs"
-Code: 0007a4      80 bytes  "PilotMain"
-Code: 0007f4      40 bytes  "GetObjectPtr<9FieldType>__FUs_P9FieldType"
+Code: 000472      18 bytes  "getUnixTime__Fv"                File: "C:\Documents and Settings\Jonas\My Documents\PalmOS\PalmOS_Authenticator\Src\PalmOSAuthenticator.cpp"
+Code: 000484      54 bytes  "MainFormInit__FP8FormType"
+Code: 0004ba     118 bytes  "MainFormDoCommand__FUs"
+Code: 000530     166 bytes  "MainFormHandleEvent__FP9EventType"
+Code: 0005d6      74 bytes  "AppHandleEvent__FP9EventType"
+Code: 000620      90 bytes  "AppEventLoop__Fv"
+Code: 00067a      10 bytes  "AppStart__Fv"
+Code: 000684      12 bytes  "AppStop__Fv"
+Code: 000690     304 bytes  "RomVersionCompatible__FUlUs"
+Code: 0007c0      80 bytes  "PilotMain"
+Code: 000810      40 bytes  "GetObjectPtr<9FieldType>__FUs_P9FieldType"
 
 Data section below A5:      8 bytes
 Data section above A5:    168 bytes
@@ -75,8 +76,8 @@ PRC DB Version:    1
 Type:              appl
 Creator:           POAU
 Resource Count:    13
-Creation Time:     2019-07-09 @ 2149
-Modification Time: 2019-07-09 @ 2149
+Creation Time:     2019-08-06 @ 1202
+Modification Time: 2019-08-06 @ 1202
 Last Backup Time:  
 Attributes:         0x00000009
                     dmHdrAttrResDB
@@ -86,7 +87,7 @@ Attributes:         0x00000009
 [PalmOS Authenticator]
 2:   tver           Application Version String         1000 (0x03e8)     4
 [1.0]
-3:   code           68K Object Code                    1 (0x0001)        2076
+3:   code           68K Object Code                    1 (0x0001)        2104
 4:   data           68K Global Data                    0 (0x0000)        107
 5:   code           68K Object Code                    0 (0x0000)        24
 6:   MBAR           Menu Bar                           1001 (0x03e9)     303

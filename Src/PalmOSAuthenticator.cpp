@@ -12,6 +12,9 @@
 #include <libs/SHALib.h> 
 #include <PalmOS.h>
 #include <PalmOSGlue.h>
+#include <DateTime.h>
+#include <StringMgr.h>
+
 
 #include "PalmOSAuthenticator.h"
 #include "PalmOSAuthenticator_Rsc.h"
@@ -36,6 +39,13 @@ using namespace std;
 /* Define the minimum OS version we support */
 #define ourMinVersion    sysMakeROMVersion(3,0,0,sysROMStageDevelopment,0)
 #define kPalmOS20Version sysMakeROMVersion(2,0,0,sysROMStageDevelopment,0)
+
+
+static UInt32 getUnixTime()
+{
+	return TimGetSeconds() - 2082844800;
+	
+}
 
 /*********************************************************************
  * Internal Functions
@@ -199,7 +209,10 @@ static Boolean MainFormHandleEvent(EventType * eventP)
 				FieldType * field = GetObjectPtr<FieldType>(MainDescriptionField);
 				if (field)
 				{
-					char *text = FldGetTextPtr(field);
+					//char *text = FldGetTextPtr(field);
+					char text[30];
+					UInt32 time = getUnixTime();
+					StrIToA(text, time);
 					FrmCustomAlert(AlertNotImplemented, text, NULL, NULL);
 					FldDelete(field, 0, 0xFFFF);					
 					FldDrawField(field);
